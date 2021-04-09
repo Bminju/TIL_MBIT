@@ -12,7 +12,7 @@ class Question(models.Model):
     content = models.CharField(max_length=100)
     
     def __str__(self):
-        return f'{self.number}. {self.content}'
+        return f'{self.number}. {self.content}' # 두가지 대표 문자열을 설정 
 class Choice(models.Model):
     content = models.CharField(max_length=100)
     question = models.ForeignKey(to='main.Question', on_delete=models.CASCADE) # ~model과 연결. on_delete = 연결된 model이 지워지면 함께 지워지는 옵션
@@ -20,3 +20,5 @@ class Choice(models.Model):
 
     def __str__(self):
         return self.content
+
+        
