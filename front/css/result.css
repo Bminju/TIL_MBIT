@@ -17,6 +17,24 @@ body {
     font-family: "NEXON Lv1 Gothic OTF";
 }
 
+button {
+    font-family: "NEXON Lv1 Gothic OTF";
+    font-size: 20px;
+    width: 400px;
+    height: 50px;
+    padding: 5px;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #fff;
+    color: #000;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
 #main_contents{
     display: flex;
     justify-content: center;
@@ -94,4 +112,148 @@ body {
 
 .result_explains li {
     padding-bottom: 15px;
+}
+
+.lectures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid #EA7E7C;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.lectures .title {
+    text-align: center;
+    width: 400px;
+    font-size: 30px;
+    font-family: "GmarketSansBold";
+    color: #EA7E7C;
+    position: relative;
+}
+
+.lectures .title:before, .lectures .title:after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 3px;
+    background-color: #EA7E7C;
+    position: absolute;
+}
+.lectures .title:before {
+    left: 0;
+    top: 50%;
+}
+
+.lectures .title:after {
+    right: 0;
+    top: 50%;
+}
+
+.lectures p {
+    padding: 50px 0;
+}
+
+.lectures ul {
+    width: 400px;
+}
+
+.lectures li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.lectures a{
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+}
+
+.lectures a:hover img {
+    transform: scale(1.05);
+}
+
+.lectures a:hover button {
+    text-decoration: underline;
+}
+
+.lectures li img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    transition: transform .5s;
+}
+
+.lectures li h3 {
+    font-family: "GmarketSansBold";
+    font-size: 17px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0 10px 20px;
+}
+
+.lectures li button{
+    background-color: #7F47DD;
+    color: #fff;
+}
+
+.share {
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    border-bottom: 3px solid #EA7E7C;
+}
+
+.share button {
+    margin-bottom: 30px;
+}
+
+.facebook_share {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.kakao_share {
+    background-color: #f1d900;
+}
+
+.buttons {
+    padding-bottom: 50px;
+}
+
+.buttons h3 {
+    padding-bottom: 20px;
+}
+
+.buttons button {
+    margin-bottom: 30px;
+}
+
+.color {
+    background-color: #7F47DD;
+    color: #fff;
+}
+
+.weniv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weniv a{
+    width: 100px;
+}
+
+.weniv img{
+    width: 100%;
+    height: auto;
+}
+
+.weniv p {
+    padding-top: 20px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 1.5;
 }
