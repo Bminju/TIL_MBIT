@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>나의 개발 유형찾기</title>
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
 <body> 
     <section id="main_contents"> 
@@ -46,7 +47,7 @@
             </div>
             <div class="weniv">
                 <a href="http://www.paullab.co.kr">
-                    <img src="img/weniv_logo_black.png" alt="weniv">
+                    <img src="{% static 'img/weniv_logo_black.png' %}" alt="weniv">
                 </a>
             </div>
         </div>
