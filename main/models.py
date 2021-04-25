@@ -3,7 +3,7 @@ from django.db import models
 class Developer(models.Model):
     name = models.CharField(max_length=50)
     count = models.IntegerField(default=0)
-
+    data = models.JSONField()
     def __str__(self):
         return self.name  #클래스를 대표하는 문자열을 name으로 설정하겠다. 매직 method
 
