@@ -18,7 +18,7 @@ def form(request):
 
     return render(request, 'form.html', context=context)
 
-def result(request):
+def submit(request):
     # 문항 수
     N = Question.objects.count()
     # 개발자 유형 수 
@@ -44,4 +44,7 @@ def result(request):
         'developer' : best_developer,
         'counter' : counter
     }
-    return render(request, 'result.html', context)
+    return redirect('/result/')
+
+def result(request):
+    return render(request, 'result.html')
